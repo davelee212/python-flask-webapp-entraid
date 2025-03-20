@@ -1,0 +1,15 @@
+{% extends "root_base.html" %}
+{% block title %}User Information{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+<h2>User Information</h2> <BR><BR>
+Username: {{ user }}<BR><BR>
+Preferred Username:        {{ preferred_username }}<BR><BR>
+Application Roles            {{ roles }}   
+
+{% endblock %}

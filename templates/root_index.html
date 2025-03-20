@@ -1,0 +1,12 @@
+{% extends "root_base.html" %}
+{% block title %}User Information{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+<h2>Hello, who are you?</h2> <BR><BR>
+This page isn't protected by authentication.  If you're not logged on and you try accessing "User Information", you will be forced to logon because the @login_required decorator is used on that route.
+{% endblock %}

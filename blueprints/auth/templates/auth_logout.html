@@ -1,0 +1,13 @@
+{% extends "root_base.html" %}
+{% block title %}User Information{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+<h2>Logout Complete</h2>
+<br/>
+<a href="{{ application_root_uri }}"><p>Click Here</a> to go to the Home Page</p> 
+{% endblock %}

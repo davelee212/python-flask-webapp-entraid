@@ -1,0 +1,13 @@
+{% extends "root_base.html" %}
+{% block title %}Protected Page{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+<h2>Hello {{ user }}!</h2> <BR><BR>
+This is an example page that is protected by authentication - it has the @login_required decorator on it's route.<BR><BR>
+Just to prove it, here is your "preferred name" (well, what Entra ID told us anyway):  {{ preferred_username }} (magic!)<BR><BR
+{% endblock %}
