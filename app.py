@@ -55,7 +55,7 @@ def create_app():
         @app.route("/protected")
         @login_required
         def protected():
-            return render_template('root_protected.html', user=session['name'], preferred_username=session.get('user')['preferred_username'])           
+            return render_template('root_protected.html', user=session.get('user')['name'], preferred_username=session.get('user')['preferred_username'])           
 
         # Import and Register Admin blueprint
         from blueprints.admin.routes import admin
